@@ -513,13 +513,14 @@ listenButtons.forEach((button, index) => {
     container.style.display = 'flex';
     container.style.justifyContent = 'center';
     container.style.alignItems = 'center';
-    container.style.height = '50%';
-    container.style.width = '50%'; // Make the container full width
+    container.style.height = '100%';
+    container.style.width = '100%'; // Make the container full width
 
     // Create an audio element with a smaller width for mobile
     const audio = popup.document.createElement('audio');
     audio.controls = true;
     audio.style.width = '35%'; // Adjust the width of the audio element for mobile
+    audio.style.hight='20%';
     const source = popup.document.createElement('source');
     source.src = `surah_${index + 1}.mp3`;
     source.type = 'audio/mpeg';
